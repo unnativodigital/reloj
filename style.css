@@ -1,0 +1,66 @@
+body{
+    font-family: 'DotGothic16', sans-serif;
+    background-color: greenyellow;
+    color: greenyellow;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.container{
+    border: solid greenyellow 1px;
+    background-color: black;
+    border-radius: 10px;
+    border-width: 9px;
+    border-radius: 12px;
+    
+    }
+
+
+
+.btn {
+    background-color: black;
+    color: greenyellow;
+    border: solid 1px greenyellow;
+    border-radius: 6px;
+    padding: 9px;
+    margin-top: 5px;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-back{
+
+background-color: orangered;
+color: black;
+border: solid 1px orangered;
+border-radius: 6px;
+padding: 9px;
+margin-top: 5px;
+
+}
+
+.btn-back:hover{
+    background-color: greenyellow; 
+    color: black;
+    border: solid 1px greenyellow;
+    border-radius: 6px;
+    padding: 9px;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background-color: greenyellow;
+    color: black;
+    border: solid 1px greenyellow;
+    border-radius: 6px;
+    margin-top: 5px;
+
+
+}
+

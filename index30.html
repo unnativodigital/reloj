@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<title>countdown 30</title>
+</head>
+<body>
+<div class="container ">
+    <div class="RELOJ">
+
+<details open>
+
+<summary> 
+    <span> <u>countdown</u></span>
+</summary>
+<span id="countdown"></span>
+    <div>
+    <a href="./index.html"><input class="btn-back" type="button" value="BACK"> </a>
+        <br>
+        <br>
+    </div>
+</div>
+    <!-- Countdown -->
+    <script>
+
+const audio = ("https://cdn.pixabay.com/audio/2021/09/27/audio_91211934db.mp3?filename=clock-alarm-8761.mp3");        
+var segundoInicio = 30;
+        function actualizar () {
+            document.getElementById("countdown").innerHTML = segundoInicio;
+
+            if (segundoInicio == 0) {
+                window.location.replace('./index.html');
+
+            }
+            else {
+                segundoInicio = segundoInicio - 1;
+                setTimeout(actualizar, 1E3 );
+            }
+        }
+actualizar();
+    </script>
+</body>
+</html>
